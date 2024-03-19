@@ -1,0 +1,380 @@
+/* General */
+
+* {
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-family: Roboto;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+h1 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 113px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+h6 {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+body,
+h1,
+h2,
+h3,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+figure,
+figcaption,
+blockquote,
+textarea,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Colors */
+
+:root {
+  --pismo-1: #000;
+  --pismo-2: #fff;
+  --brown-1: #33292a;
+  --brown-2: #644b4f;
+  --dark-gray: #333333;
+  --light-gray: #f2f2f2;
+  --pink-1: #efa69d;
+  --pink-2: #e9877b;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--brown-1);
+  height: 90px;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav li {
+  list-style-type: none;
+  margin-right: 20px;
+  margin-left: 15px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Homepage */
+
+.homepage {
+  position: relative;
+  background-image: url("../engeto1/images/homepage.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: var(--pismo-2);
+}
+
+.homepage .wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.homepage h1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 400px;
+  text-align: right;
+  margin-right: 60px;
+  margin-bottom: 15%;
+}
+
+/* Wrapper */
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* About us */
+
+.about-us-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+.container {
+  flex: 1;
+  padding: 25px;
+}
+
+.container:last-child {
+  margin-right: 0;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container h2 {
+  padding-bottom: 16px;
+}
+
+/* What we do (ikony) */
+.what-we-do {
+  background-color: var(--brown-1);
+  width: 100vw;
+  padding-bottom: 30px;
+}
+
+.content {
+  margin-bottom: 30px;
+  margin: 0 auto;
+  padding: 50px;
+  max-width: 1100px;
+  color: var(--pismo-2);
+}
+
+.content h2 {
+  margin-bottom: 23px;
+  color: var(--pismo-2);
+  text-align: center;
+}
+
+.content p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* allow items to wrap to new lines */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.icons {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.icons img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.icons h3 {
+  font-size: 1.2em;
+  color: var(--pismo-2);
+}
+
+/* Our trips */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.grid-item {
+  overflow: hidden;
+}
+
+.grid-item-center {
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.grid-item-center h2 {
+  text-align: center;
+}
+
+/* Contact */
+
+.wdywtg {
+  background-color: var(--brown-2);
+  padding: 10%;
+}
+
+.contact {
+  display: flex;
+  color: var(--pismo-2);
+}
+
+.panel1 {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 8%;
+}
+
+.panel2 {
+  width: 70%;
+}
+
+.panel1 h2 {
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.panel2 p {
+  margin-bottom: 20px;
+}
+
+.panel2 button {
+  width: 133px;
+  height: 43px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Reviews */
+
+.review-section {
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 6%;
+}
+
+.review-container {
+  display: inline-block;
+  width: 300px;
+  vertical-align: top;
+  margin: 20px;
+}
+
+.review-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.review-container h2 {
+  margin-bottom: 20px;
+}
+
+.review-container p {
+  margin-bottom: 32px;
+}
+
+.circle {
+  height: 110px;
+  width: 110px;
+  margin: 20px auto;
+  overflow: hidden; /* Ensure the image doesn't overflow the container */
+}
+
+/* Photo grid */
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 0; /* No gap between grid items */
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--dark-gray);
+  color: var(--pismo-2);
+  padding: 30px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer h6 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--pismo-2);
+  text-decoration: none;
+  color: var(--pink-1);
+}
+
+.footer a:hover {
+  color: var(--pink-2);
+}
+
+.footer p {
+  margin-bottom: 0;
+}
