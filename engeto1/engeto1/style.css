@@ -173,7 +173,7 @@ nav ul li a:hover {
 /* What we do (ikony) */
 .what-we-do {
   background-color: var(--brown-1);
-  width: 100vw;
+  width: 100%;
   padding-bottom: 30px;
 }
 
